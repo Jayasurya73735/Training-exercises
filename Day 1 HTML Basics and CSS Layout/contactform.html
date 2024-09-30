@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form Exercise</title>
+    <style>
+        .maindiv{
+            padding: 20px;
+        }
+        .navbaralign{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        align-items: center;
+    }
+    .navitem{
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        padding-right:50px ;
+    }
+        .forminputs{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 400px;
+            justify-content: space-around;
+            border: 1px solid black ;
+            padding: 10px;
+        }
+        .formallign{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .buttonstyle{
+            background-color: black;
+            color: white;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maindiv">
+        <h1 style="text-align: center;">Contact form Exercise</h1>
+        <br>
+        <ul class="navbaralign">
+            <a href="" class="navitem"><li class="navitem">Home</li></a>
+            <a href="" class="navitem"><li class="navitem">About</li></a>
+            <a href="" class="navitem"><li class="navitem">Contact</li></a>
+        </ul>
+        <div class="formallign">
+        <form action="GET" class="forminputs">
+            <h3 style="text-align: center;">Contact us</h3>
+            <label for="">Name: </label>
+            <input type="text" name="" id="">
+            <label for="">Email: </label>
+            <input type="email" name="" id="">
+            <label for="">Phone: </label>
+            <input type="number" name="" id="">
+            <label for="">Message: </label>
+            <textarea name="" id="" cols="3" rows="6"></textarea>
+            <button class="buttonstyle">Submit</button>
+        </form>
+    </div>
+        <footer style="text-align: center;">
+            <p>© 2024 My first HTML page</p>
+        </footer>
+    </div>
+</body>
+
+</html>

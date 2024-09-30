@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics Review</title>
+    <style>
+        .maindiv{
+            padding: 20px;
+        }
+        .navbaralign{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            background-color: black;
+            color: white;
+        }
+        .navitem{
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            padding: 20px;
+            background-color: #faf7f7;
+        }
+        #diffcolor{
+            color: red;
+        }
+        .textprop{
+            line-height: 2cm;
+        }
+        .boxcontents{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .innerboxcontents{
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        .pseudoclassitems:hover{
+            color: red;
+        }
+        .pseudoclassitems2:before{
+            content: 'Start :';
+            color: green;
+        }
+        .pseudoclassitems2:after{
+            content: ': End';
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <h1>CSS Basics Review</h1>
+        <ul class="navbaralign">
+            <a href="" class="navitem"><li class="navitem">Home</li></a>
+            <a href="" class="navitem"><li class="navitem">About</li></a>
+            <a href="" class="navitem"><li class="navitem">Services</li></a>
+            <a href="" class="navitem"><li class="navitem">Contact</li></a>
+        </ul>
+        <div style="background-color: #c2c0c0; padding: 8px;">
+            <h2>Introduction:</h2>
+            <p class="textprop">This is a brief <em>introduction paragraph</em> that shows different text properties like <span style="font-size: 30px;">font-size</span>, <span id="diffcolor">color</span> and line height. Thus, the next line will be printed 2 cms below the previous line which is odd for texts in the same paragraph tag element.</p>
+        </div>
+        <br>
+        <div class="boxcontents">
+            <div class="innerboxcontents">
+                <h3>Box 1: Title1</h3>
+                <p>Content 1</p>
+                <p>Background, Borders, Margins, Padding</p>
+            </div>
+            <div class="innerboxcontents">
+                <h3>Box 1: Title1</h3>
+                <p>Content 1</p>
+                <p>Background, Borders, Margins, Padding</p>
+            </div>
+            <div class="innerboxcontents">
+                <h3>Box 1: Title1</h3>
+                <p>Content 1</p>
+                <p>Background, Borders, Margins, Padding</p>
+            </div>
+        </div>
+        <br>
+
+        <div style="background-color: #c2c0c0; padding: 8px;">
+            <h3>Pseudo-classes Example:</h3>
+            <p class="pseudoclassitems">item 1(hover, active, etc)</p>
+            <p>item 2</p>
+            <br>
+            <h3>Pseudo-classes Example:</h3>
+            <p class="pseudoclassitems2">:before and ::after applied to this paragraph.</p>
+        </div>
+        <br><br>
+        <footer style="text-align: center;">
+            <p>© 2024 CSS Basics Review</p>
+        </footer>
+    </div>
+</body>
+</html>

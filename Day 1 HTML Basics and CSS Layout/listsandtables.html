@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists and Tables Exercise</title>
+<style>
+    .maindiv{
+        padding: 20px;
+    }
+    table, th, td{
+        border: 1px solid black;
+        
+    }
+    .navbaralign{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        align-items: center;
+    }
+    .navitem{
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        padding-right:50px ;
+    }
+</style>
+</head>
+
+<body>
+    <div class="maindiv">
+        <h1 style="text-align: center; background-color: #dae0db; padding: 20px;">HTML Lists and Tables</h1>
+        
+        <ul class="navbaralign">
+            <a href="" class="navitem"><li class="navitem">Home</li></a>
+            <a href="" class="navitem"><li class="navitem">About</li></a>
+            <a href="" class="navitem"><li class="navitem">Contact</li></a>
+        </ul>
+        <div>
+            
+                <h3>Ordered List</h3>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+                <h3>Unordered List</h3>
+                <ul>
+                    <li>Bullet point 1</li>
+                    <li>Bullet point 2</li>
+                    <li>Bullet point 3</li>
+                </ul>
+                <h3>Description List</h3>
+                <dl>
+                    <dt>Term 1:</dt>
+                    <dd>Definition</dd>
+                    <dt>Term 2:</dt>
+                    <dd>Definition</dd>
+                </dl>
+            
+        </div>
+        <div>
+            <table>
+                
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                        <th>Occupation</th>
+                    </tr>
+                
+                
+                    <tr>
+                        <td>John Doe</td>
+                        <td>28</td>
+                        <td>New York</td>
+                        <td>Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>34</td>
+                        <td>London</td>
+                        <td>Designer</td>
+                    </tr>
+                    <tr>
+                        <td>Tom Brown</td>
+                        <td>22</td>
+                        <td>Toronto</td>
+                        <td>Student</td>
+                    </tr>
+                
+            </table>
+        </div>
+        <footer style="text-align: center;">
+            <p>© 2024 My first HTML page</p>
+        </footer>
+    </div>
+</body>
+
+</html>

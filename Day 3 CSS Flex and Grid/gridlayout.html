@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example</title>
+    <style>
+        .headernote {
+            text-align: center;
+            background-color: green;
+            color: white;
+            padding: 20px;
+        }
+
+        .gridcontent {
+            display: grid;
+            gap: 20px;
+        }
+
+        .item1 {
+            grid-row-start: 1;
+            grid-row-end: 6;
+            background-color: #edeff2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .item2 {
+            grid-row-start: 1;
+            grid-row-end: 6;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: #8d8e8f;
+            padding: 20px;
+            border-radius: 5px;
+            /* align-self: center; */
+            /* justify-self: center; */
+        }
+
+        .footersection {
+            text-align: center;
+            background-color: green;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1 class="headernote">Flexbox Layout Example</h1>
+        </header>
+        <div class="gridcontent">
+            <div class="item1">
+                <p>Sidebar</p>
+            </div>
+            <div class="item2">
+                <p>Main Content Area</p>
+            </div>
+        </div>
+        <footer>
+            <p class="footersection">© 2024 FlexBox Layout Example</p>
+        </footer>
+    </div>
+</body>
+
+</html>

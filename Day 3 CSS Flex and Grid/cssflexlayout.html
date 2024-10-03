@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Layout Example</title>
+    <style>
+        .navbaralign {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        .navitem {
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+            padding-right: 50px;
+        }
+
+        .headernote {
+            text-align: center;
+            background-color: #d9dadb;
+            padding: 20px;
+            margin-bottom: 0;
+        }
+        p{
+            padding: 20px;
+            background-color: green;
+            color: white;
+            width: 40%;
+            text-align: center;
+        }
+        .flexcontainer{
+            display: flex;
+            column-gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .footersection{
+            text-align: center;
+            background-color: #edeff2;
+            color: black;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="headernote">Flexbox Layout Example</h1>
+        <ul class="navbaralign">
+            <a href="" class="navitem">
+                Home
+            </a>
+            <a href="" class="navitem">
+                About
+            </a>
+            <a href="" class="navitem">
+                Services
+            </a>
+            <a href="" class="navitem">
+                Contact
+            </a>
+        </ul>
+        <div>
+            <div class="flexcontainer">
+                <p>Content Box 1</p>
+                <p>Content Box 2</p>
+            </div>
+            <div class="flexcontainer">
+                <p>Content Box 3</p>
+                <p>Content Box 4</p>
+            </div>
+            <div class="flexcontainer">
+                <p>Content Box 5</p>
+                <p>Content Box 6</p>
+            </div>
+        </div>
+        <footer>
+            <p class="footersection">© 2024 FlexBox Layout Example</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

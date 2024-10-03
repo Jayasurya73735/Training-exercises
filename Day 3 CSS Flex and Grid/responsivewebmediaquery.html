@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbaralign {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        .navitem {
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+            padding-right: 50px;
+        }
+
+        .headernote {
+            text-align: center;
+            background-color: #d9dadb;
+            padding: 20px;
+            margin-bottom: 0;
+        }
+
+        p {
+            padding: 20px;
+            background-color: green;
+            color: white;
+            width: 40%;
+            text-align: center;
+        }
+
+        .flexcontainer {
+            display: flex;
+            column-gap: 20px;
+            justify-content: center;
+        }
+
+        .footersection {
+            text-align: center;
+            background-color: #edeff2;
+            color: black;
+            width: 100%;
+        }
+
+        .viewdeclaration {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 1px) {
+            body {
+                background-color: lightgreen;
+            }
+
+            p {
+                background-color: black;
+                color: white;
+            }
+            .emptysection::after {
+                content: 'This is a Mobile View';
+                background-color: darkgreen;
+                color: white;
+                width: 80vw;
+                padding: 20px;
+                font-size: x-large;
+            }
+        }
+
+        @media screen and (min-width: 481px) {
+            body {
+                background-color: lightpink;
+            }
+
+            p {
+                background-color: red;
+                color: white;
+            }
+            .emptysection::after {
+                content: 'This is a Tablet View';
+                background-color: darkred;
+                color: white;
+                width: 80vw;
+                padding: 20px;
+                font-size: x-large;
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+            body {
+                background-color: lightblue;
+            }
+
+            p {
+                background-color: orange;
+                color: black;
+            }
+
+            .emptysection::after {
+                content: 'This is a Desktop View';
+                background-color: darkmagenta;
+                color: white;
+                width: 80vw;
+                padding: 20px;
+                font-size: x-large;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="headernote">Flexbox Layout using Media Query</h1>
+        <ul class="navbaralign">
+            <a href="" class="navitem">
+                Home
+            </a>
+            <a href="" class="navitem">
+                About
+            </a>
+            <a href="" class="navitem">
+                Services
+            </a>
+            <a href="" class="navitem">
+                Contact
+            </a>
+        </ul>
+        <br>
+        <div class="emptysection viewdeclaration">
+
+        </div>
+        <br>
+        <div>
+            <div class="flexcontainer">
+                <p>Content Box 1</p>
+                <p>Content Box 2</p>
+            </div>
+            <div class="flexcontainer">
+                <p>Content Box 3</p>
+                <p>Content Box 4</p>
+            </div>
+            <div class="flexcontainer">
+                <p>Content Box 5</p>
+                <p>Content Box 6</p>
+            </div>
+        </div>
+        <footer>
+            <p class="footersection">© 2024 FlexBox Layout Example</p>
+        </footer>
+    </div>
+</body>
+
+</html>

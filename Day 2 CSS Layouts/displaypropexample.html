@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties Example</title>
+    <style>
+        .navbaralign{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        align-items: center;
+    }
+    .navitem{
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        padding-right:50px ;
+    }
+    .blockelements{
+        display: block;
+        background-color: green;
+        color: white;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .inlineelement{
+        display: inline;
+        padding: 20px;
+        border: 1px solid red;
+        background-color: aqua;
+    }
+    .inlineblockelement{
+        display: inline-block;
+        border: 1px solid black;
+        background-color: brown;
+        color: white;
+        padding: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">Display Property Examples</h1><br>
+        <ul class="navbaralign">
+            <a href="" class="navitem"><li class="navitem">Home</li></a>
+            <a href="" class="navitem"><li class="navitem">About</li></a>
+            <a href="" class="navitem"><li class="navitem">Contact</li></a>
+        </ul>
+        <div>
+            <div class="blockelements">Block Element 1: (Display: block)</div><br>
+            <div class="blockelements">Block Element 2: (Display: block)</div><br>
+            <div class="blockelements">Block Element 3: (Display: block)</div>
+        </div>
+        <br><br>
+        <div>
+            <p class="inlineelement">Inline element 1</p>
+            <p class="inlineelement">Inline element 2</p>
+            <p class="inlineelement">Inline element 3</p>
+        </div><br><br>
+        <div>
+            <p class="inlineblockelement">Inline Block element 1</p>
+            <p class="inlineblockelement">Inline Block element 2</p>
+            <p class="inlineblockelement">Inline Block element 3</p>
+        </div>
+        <footer style="text-align: center;">
+            <p class="footersection">© 2024 Display Properties Example</p>
+        </footer>
+    </div>
+</body>
+</html>

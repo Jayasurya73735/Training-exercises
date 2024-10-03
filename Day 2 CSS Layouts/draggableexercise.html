@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Divs Example</title>
+    <style>
+        body {
+            padding: 20px;
+            margin: 0;
+            border: 0;
+        }
+
+        .container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            border: 2px solid #333;
+        }
+
+        .draggable {
+            width: 180px;
+            height: 40px;
+            background-color: rgb(11, 183, 11);
+            color: white;
+            position: absolute;
+            cursor: move;
+            text-align: center;
+            justify-self: center;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Draggable Exercise</h1><br>
+    <div>
+        <center>
+            <div class="container">
+                <div class="draggable" id="draggable">Drag me within the box</div>
+            </div>
+        </center>
+    </div>
+    <footer style="text-align: center;">
+        <p>© 2024 Draggable Divs Example</p>
+    </footer>
+    <script>
+        const draggable = document.getElementById('draggable');
+        const container = document.querySelector('.container');
+
+        let offsetX = 0, offsetY = 0, mouseX = 0, mouseY = 0, isDragging = false;
+
+        // Mouse down event to start dragging
+        draggable.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            offsetX = e.offsetX;
+            offsetY = e.offsetY;
+            draggable.style.cursor = 'grabbing';
+        });
+
+        // Mouse move event to handle dragging
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                // Calculate new position
+                const containerRect = container.getBoundingClientRect();
+                mouseX = e.clientX - containerRect.left - offsetX;
+                mouseY = e.clientY - containerRect.top - offsetY;
+
+                // Constrain within the container boundaries
+                const maxX = containerRect.width - draggable.offsetWidth;
+                const maxY = containerRect.height - draggable.offsetHeight;
+
+                const newX = Math.max(0, Math.min(mouseX, maxX));
+                const newY = Math.max(0, Math.min(mouseY, maxY));
+
+                draggable.style.left = `${newX}px`;
+                draggable.style.top = `${newY}px`;
+            }
+        });
+
+        // Mouse up event to stop dragging
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+            draggable.style.cursor = 'grab';
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+    <style>
+        *{
+            background-color: grey;
+            margin: 0;
+            border: 0;
+        }
+        .maindiv{
+            background-color: white;
+            padding: 20px;
+        }
+        .navbaralign{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            background-color: black;
+            color: white !important; 
+        }
+        .navitem{
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            background-color: black;
+        }
+        .firstsection{
+            padding: 20px;
+        }
+        .secondsection{
+            background-color: grey;
+            padding: 30px;
+
+        }
+        h4{
+            font-size: x-large;
+        }
+        .secondsection>p{
+            color: blue;
+        }
+        .thirdsection{
+            background-color: yellow;
+            padding: 10px;
+        }
+        #fourthsection{
+            color: red;
+            padding: 20px;
+        }
+        input[type = "text"]{
+            height: 40px;
+            width: 500px;
+            border: 1px solid greenyellow;
+        }
+        div p{
+            color: red;
+        }
+        ul >li{
+            color: chartreuse;
+        }
+        h5 + p{
+            color: aqua;
+        }
+        h2 ~ p{
+            font-size: x-large;
+        }
+        .footersection{
+            text-align: center; 
+            background-color: white; 
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <h1 style="text-align: center;padding: 20px;">CSS Selectors Practice</h1>
+        <ul class="navbaralign">
+            <a href="" class="navitem"><li class="navitem">Home</li></a>
+            <a href="" class="navitem"><li class="navitem">About</li></a>
+            <a href="" class="navitem"><li class="navitem">Services</li></a>
+            <a href="" class="navitem"><li class="navitem">Contact</li></a>
+        </ul>
+        <br>
+        <div class="firstsection">
+            <h3>Universal Selector Example</h3><br>
+            <p>This passage is styled using the universal selector (*) which applies to all the elements in the page</p>
+        </div>
+        <br>
+        <div class="secondsection">
+            <h3>Type Selector Example</h3><br>
+            <h4>Headings and Paragraphs</h4><br>
+            <p>This paragraph is an example for the paragraph styled using the type selector</p>
+        </div>
+        <br>
+        <div class="thirdsection">
+            <h3 class="thirdsection">Class Selector Example</h3>
+            <p class="thirdsection">This paragraph is styled using the class selector named .thirdsection</p>
+        </div>
+        <br>
+        <div id="fourthsection">
+            <h3>ID Selector Example</h3><br>
+            <p>This section and paragraph is styled using the ID selector.</p>
+        </div>
+        <br>
+        <div class="firstsection">
+            <h3>Attribute Selector Example</h3><br>
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="">
+        </div>
+        <br>
+        <div class="firstsection descendantselector">
+            <h3>Descendant Selector Example</h3><br>
+            <p>This paragraph inside a div is styled using the descendant selector(div p).</p>
+        </div>
+        <br>
+        <div class="firstsection">
+            <h3>Child Selector Example</h3><br>
+            <ul>
+                <li>First child item styled using the child selector(ul > li).</li>
+                <li>Other child item in that list</li>
+            </ul>
+        </div>
+        <br>
+        <div class="firstsection">
+            <h3>Adjacent Sibling Selector Example</h3><br>
+            <h5>This is a heading</h5>
+            <p>This paragraph is styled as the adjacent sibling selector of the above heading element(h5 + p).</p>
+        </div>
+        <br>
+        <div class="firstsection">
+            <h3>General Sibling Selector Example</h3><br>
+            <h2>Another heading</h2>
+            <p>This paragraph is styled using the general sibling selector of the above heading(h2 - p)</p>
+            <p>Another paragraph styled in the same way</p>
+        </div><br>
+        <footer>
+            <p class="footersection">© 2024 CSS Basics Review</p>
+        </footer>
+    </div>
+</body>
+</html>
